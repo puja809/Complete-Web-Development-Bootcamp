@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'section section aside'
+            'footer footer footer';
+        }
+        .item{
+            background-color: wheat;
+            border: 2px solid green;
+            padding: 25px;
+            margin:6px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="navbar" class="item">Home About Us Contact Us</div>
+    <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, culpa nisi. Repellendus quos beatae itaque ut, neque dolores consequatur sit facilis iusto quidem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam distinctio, eligendi veritatis nobis velit at? Doloribus quaerat quasi iusto blanditiis quae? Nisi architecto dolores pariatur consequuntur consequatur. Aperiam consequuntur laboriosam accusantium consequatur expedita explicabo tempore saepe enim, quae assumenda voluptatum repellendus voluptates sint odio porro amet maxime. Quae, ex perspiciatis eligendi voluptas illum asperiores libero et sint sequi nihil voluptatem quo magnam illo officia similique porro culpa!</div>
+    <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui labore sit totam facere commodi temporibus sint ratione alias, fugit sunt aperiam explicabo deserunt odit dolore. Explicabo expedita iure nostrum sunt porro odio enim voluptatem, sint quasi ratione veniam omnis quia aut, repellat, ipsam saepe cupiditate qui consectetur perferendis ad. Voluptas porro explicabo quia ratione voluptate in voluptatem?</div>
+    <footer id="footer" class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt cumque quibusdam, consequuntur molestiae officiis nam ipsa possimus recusandae temporibus quisquam esse qui, magni voluptatem. Itaque nisi aperiam, doloribus fuga mollitia atque pariatur quod at et earum adipisci illo vitae explicabo?</footer>
+    <!-- <div class="item">Item-1</div>
+    <div class="item">Item-2</div>
+    <div class="item">Item-3</div>
+    <div class="item">Item-4</div>
+    <div class="item">Item-5</div>
+    <div class="item">Item-6</div>
+    <div class="item">Item-7</div>
+    <div class="item">Item-8</div>
+    <div class="item">Item-9</div>
+    <div class="item">Item-10</div>
+    <div class="item">Item-11</div>
+    <div class="item">Item-12</div>
+    <div class="item">Item-13</div>
+    <div class="item">Item-14</div> -->
+</div>    
+</body>
+</html>

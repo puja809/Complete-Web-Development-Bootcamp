@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning CSS Grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: repeat(5, 2fr);
+            grid-template-rows: 2fr 2fr 3fr;
+            grid-auto-rows: 3fr;
+            grid-row-gap: 1rem;
+            grid-column-gap: 1rem;
+
+        }
+        .box{
+            background-color: burlywood;
+            border: 2px solid brown;
+            padding: 20px;
+        }
+
+        .box:first-child{
+            /* Spanning will start from column 1st line and end in column 4th line */
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+
+            /* Spanning will start from row 1st line and end in row 4th line */
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            /* Short-cut for above properties */
+            /* spanning will be done from 1st to 3rd column */
+            grid-column: 1/span 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is Item-1</div>
+        <div class="box">This is Item-2</div>
+        <div class="box">This is Item-3</div>
+        <div class="box">This is Item-4</div>
+        <div class="box">This is Item-5</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+        <div class="box">This is Item-6</div>
+    </div>
+</body>
+</html>

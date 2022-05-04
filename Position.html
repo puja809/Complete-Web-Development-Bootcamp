@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property of CSS</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin:4px;
+            display:inline-block;
+        }
+        /* Relative Position */
+        #box3{
+            position:relative;
+            top:12px;
+            left:20px;
+        }
+        /* Absolute Property */
+        #box3{
+            /* position: absolute;
+            top: 12px;
+            left: 20px; */
+            /* position:fixed;
+            top: 5px; */
+            position: sticky;
+        }
+        .container{
+            border: 2px solid brown;
+            height: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    <h3>Position Property</h3>
+    <p>CSS has 4 types of positions:
+        <ul>
+            <li>Static: By default all elements are in static position.</li>
+            <li>Absolute: The element will be shifted with respect to the position of parent element</li>
+            <li>Relative: The element will shift from its normal position according to the configuration given leaving behind a gap at its original position.</li>
+            <li>Sticky: The element will stick at its position even if the page is scrolled</li>
+            <li>Fixed: It will fix an element at its mantioned position even if the page is scrolled. If no dimension is given for the position the element will by default come at tol left corner. But in sticky it will remain at its original positon and it dont require position dimensions</li>
+        </ul>
+    </p>
+
+</body>
+</html>

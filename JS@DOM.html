@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>DOM stands for Document Object Module</p>
+    <ul class="list" id="list">
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+    </ul>
+    <ul class="list" id="list1">
+        <li>object-1</li>
+        <li>object-2</li>
+        <li>object-3</li>
+        <li>object-4</li>
+    </ul>
+    <script>
+
+        // Targetting the elements with their id in DOM
+        // let list=document.getElementById('list');
+        // console.log(list);
+        
+        // Targetting the elements with their class in DOM
+        // This will fetch all the objects with class list. To get the first object run cls[0],for second object run cls[1] and so on in console
+        let cls=document.getElementsByClassName('list');
+        console.log(cls);
+        
+        // Targetting the elements with their html tags in DOM. Below command will fetch the first object
+        // let sel=document.querySelector('li').innerHTML="Puja";
+        // console.log(sel);
+        
+        // Targetting the elements with their html tags in DOM. Below command will fetch all the objects of same tag
+        // let sel1=document.querySelectorAll('li');
+        // console.log(sel1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and buttons</title>
+    <style>
+        .styling{
+            border: 2px solid black;
+            padding: 30px;
+            margin: 90px auto;
+            width: 500px;
+        }
+        a{
+            text-decoration: none;
+            border: 2px solid plum;
+            background-color: rosybrown;
+            border-radius: 3px;
+        }
+        a:hover{
+            background-color: rgb(241, 182, 224);
+            color: snow;
+        }
+        button:hover{
+            background-color: slategray;
+            color: snow;
+        }
+        a:visited{
+             
+            color: rgb(92, 73, 73);
+        }
+        a:active{
+            background-color: steelblue;
+            color: black;
+        }
+        button:active{
+            background-color: rgb(92, 73, 73);
+        }
+        h3{
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <!-- a:hover,a:active,button:hover are some examples of pseudo selectors. With the help of this we can target particular elements. -->
+    <div class="styling">
+       <h3>Styling Links & Buttons</h3>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur earum vero accusantium quo quibusdam rem eum laudantium recusandae fugit consectetur. Adipisci fugit reiciendis aperiam cupiditate dolorum laboriosam laudantium earum exercitationem labore amet sed quae blanditiis libero vero magnam, recusandae commodi suscipit sunt, sequi aliquam? Officiis tempora delectus facere sit quidem!</p>
+        <a href="https://www.google.com" class="link" target="_blank">Read More</a>
+        <!-- <a href="https://www.Yahoo.com" class="link" target="_blank">Read More</a> -->
+        <button class="btn">Contact Us</button>
+   </div>
+</body>
+</html>

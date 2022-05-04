@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+<style>
+    .container{
+        display: grid;
+        /* Defining 3 columns with their width */
+        /* grid-template-columns: 200px 200px 200px; */
+
+        /* Divides the screen in 2:3:2 ratio */
+        /* grid-template-columns: 2fr 3fr 2fr; */
+
+        /* Use the below format to build as many columns as needed */
+        grid-template-columns: repeat(4,auto);
+
+        /* To provide gap between the column items */
+        grid-gap: 1rem;
+    }
+    .item{
+        /* height: 100px;
+        width: 100px; */
+        background-color: bisque;
+        border: 2px solid black;
+        margin: 2px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+    </div>
+</body>
+</html>

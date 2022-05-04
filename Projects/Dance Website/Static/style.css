@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+/* CSS Reset */
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+/* Logo */
+#logo{
+    display: flex;
+    filter: invert(1);
+    height: 46px;
+    width: 28px;
+}
+/* Navigation Bar */
+#navbar{
+    background-color: black;
+    padding: 12px 12px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    padding: 7px 15px;
+}
+
+#navbar ul li a:hover{
+    color: blanchedalmond;
+}
+
+/* Intro Section */
+#introSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    height: 400px;
+    background-color: aquamarine;
+    background: url('/Static/bg.jpg') center/cover no-repeat;
+}
+
+/* Mission Section */
+#missionSection{
+    height: 300px;
+    background-color: #f5ca92;
+    font-family: 'Akaya Telivigala', cursive;
+}
+#missionSection h3{
+    text-align: center;
+    padding: 12px 12px;
+    font-size: 28px;
+    
+}
+#missionSection p{
+    font-size: 28px;
+
+}
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    width:31%;
+    height:200px;
+    margin:14px 14px;
+}
+.card p{
+    text-align: center;
+    
+}
+.card-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-image img{
+    display: flex;
+    height: 124px;
+    width: 105px;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+
+/* Sponsor Section */
+#sponsorsSection{
+    height: 300px;
+    background-color: bisque;
+    text-align: center;
+    padding: 12px 12px;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 28px;
+    
+}
+#sponsorsSection h3{
+    text-align: center;
+    padding: 12px 12px;
+    
+}
+.sponsor{
+    display: flex;
+    width: 20px;
+    height: 108px;
+}
+.spImage{
+    display: flex;
+    align-items: center;
+    width: 160px;
+    position: relative;
+    left: 317px;
+    padding: 20px;
+    height: 200px;
+}
+/* Footer Section */
+#footer{
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Akaya Telivigala', cursive;
+}

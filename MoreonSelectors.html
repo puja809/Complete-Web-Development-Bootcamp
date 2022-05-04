@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selector</title>
+    <style>
+        /* p inside ul inside div */
+        div ul p{
+            color: white;
+            background-color: violet;
+        }
+        /* p is just inside div */
+        div>p{
+            color: white;
+            background-color: tomato;
+        }
+        /* p is next sibling of div */
+        div+p{
+            color: white;
+            background-color: yellow;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>This is second para</p>
+            <ul>
+                <li>
+
+                    <p>This is first para.</p>
+                    <div>
+                        <span>
+                            <p>This is third para</p>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>This is fourth para</p>
+</body>
+</html>

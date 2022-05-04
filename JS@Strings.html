@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in Java Script</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="primary">This heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque exercitationem obcaecati architecto nihil, eos, suscipit aperiam laborum, sed pariatur adipisci illo odio culpa nobis deserunt optio. Repellat pariatur commodi aspernatur officiis tenetur molestiae nulla!</p>
+    </div>
+    <script>
+        var name="Puja";
+        var str1='"Puja"';
+        console.log(name);
+        console.log(str1);
+        var str2=`Hello all I am Puja`;
+        console.log(str2);
+        console.log(`${name} is a good girl`);
+        // String function length helps to print the length of the string
+        console.log(name.length);
+        console.log(str1.length);
+        // Below command will fetch the html element by its ID and target its value to change it
+        document.getElementById('primary').innerHTML='<h3>I am Puja</h3>';
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        #head{
+            border-bottom: 2px solid black;
+            width: 109px;
+            margin: auto;
+            text-align: center;
+        }
+        #UN{
+            display:block;
+            margin:2px;
+        }
+        #pwd{
+            display:block;
+            margin:2px;
+        }
+        #form{
+            display:inline-block;
+            margin:auto;
+            width:100%;
+            text-align: center;
+            padding-bottom: 7px;
+        }
+        #UN{
+            display:inline-block;
+            margin:auto;
+            width:100%;
+            box-sizing: border-box;
+            text-align: center;
+            border: none;
+        }
+        #pwd{
+            display:inline-block;
+            margin:auto;
+            width:100%;
+            box-sizing: border-box;
+            text-align: center;
+            border: none;
+        }
+        a:hover{
+            color: white;
+            background-color: rgb(144, 231, 45);
+            
+        }
+        a{
+            text-decoration: none;
+            border:2px solid blanchedalmond;
+            border-radius: 6px;
+            background-color: burlywood;
+        }
+        #submit{
+            border:2px solid blanchedalmond;
+            border-radius: 6px;
+            background-color: burlywood;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h3 class="heading" id="head">Login Page</h3>
+    <form action="backend.php" class="frm" id="form">
+
+        <label for="UN" >Name </label>
+        <input type="text" name="UserName" id="UN" class="frm" placeholder="Enter Name">
+        <label for="pwd">Password </label>
+        <input type="password" name="pwd" id="pwd" class="frm" placeholder="Enter Password">
+        <input type="submit" value="Login" id="submit" class="frm">
+        <div>
+        <input type="checkbox" name="remember" id="remember" checked> Remember Me
+        <a href="#" id="link">Forgot Password?</a>
+        </div>
+    </form>
+</body>
+</html>

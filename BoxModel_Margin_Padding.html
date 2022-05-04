@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Margin Padding</title>
+    <style>
+        *{
+            /* Box sizing helps to keep the width and height if the element same even if margin and padding is changed */
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .primary{
+            /* padding: 10px; */
+            border: 4px solid black;
+            border-radius: 7px;
+            width: 300px;
+            background-color: #a27aae;
+            /* margin: 10px; */
+            /* We can set margin/padding using top bottom left right */
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            /* we can add padding/margin for top bottom left right together like margin:top right bottom left*/
+            /* margin: 10px 10px 10px 10px; */
+
+            /* we can give same margin/padding for top/bottom and right/left */
+            /* margin:20px 20px; */
+        }
+
+        body{
+            background-color: #604644;
+        }
+
+        p,h3{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Box Model</h3>
+    <p>Box model represents the arrangement of element->padding->border->margin</p><br><br><br>
+
+    <div class="primary">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officiis, sit, amet harum voluptatem, nihil praesentium omnis dicta rerum ducimus labore? Voluptate earum laudantium consequuntur voluptatibus, tempora laborum tenetur vel? Optio laborum deserunt eligendi.
+    </div>
+    <div class="primary">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officiis, sit, amet harum voluptatem, nihil praesentium omnis dicta rerum ducimus labore? Voluptate earum laudantium consequuntur voluptatibus, tempora laborum tenetur vel? Optio laborum deserunt eligendi.
+    </div>
+    <div class="primary">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit officiis, sit, amet harum voluptatem, nihil praesentium omnis dicta rerum ducimus labore? Voluptate earum laudantium consequuntur voluptatibus, tempora laborum tenetur vel? Optio laborum deserunt eligendi.
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="Puja.css">
+    <style>
+        div{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cascading Style Sheet</h2>
+    <p>CSS stands for cascading style sheet. It is used to design the web pages and make them responsive that is our web page will adjust itself according to mobile or desktop or other devices.</p>
+
+    <h3>CSS can be included with HTML in three ways</h3> 
+    <ul>
+        <li>Inline: CSS is added to the elements directly using style attribute</li>
+        <li>Internal: CSS is kept under head tag using style tag</li>
+        <li>External: CSS is included in seperate .css file and included in HTML</li>
+    </ul>
+
+    <h4>Inline CSS:</h4>
+    <p>&lt;p style="colour :brown;"&gt;</p>
+    <P style="color: brown;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam expedita sit ratione maxime consectetur sed hic vero repellendus ex architecto, totam odio voluptatem voluptate nemo laboriosam debitis commodi, iusto est perspiciatis, facilis laudantium minus.</P>
+    <h4>Internal CSS:</h4>
+    <p>&lt;head&gt;<br>
+        &lt;style&gt;<br>
+        div{
+            color: blueviolet;
+        } <br>
+    &lt;/style &gt; <br>
+    &lt;/head &gt;
+    </p>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa est asperiores ipsum itaque, eos veritatis aperiam ab vel, sequi, officiis deleniti assumenda ratione nulla maxime delectus illum quod corporis adipisci. Velit, a voluptate. Assumenda.</div>
+    <h4>External CSS:</h4>
+    <p>&lt;link rel="stylesheet" href="Puja.css"&gt; <br><br> In the above example "Puja.css" contains the css for span tag</p>
+    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dignissimos voluptates est atque iste porro! Mollitia autem fuga distinctio maxime harum aperiam eos doloremque accusantium ipsa itaque maiores provident minus, esse iusto perferendis voluptatibus.</span>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignments in CSS</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    #item{
+        border:3px solid #eca6a6;
+        padding: 50px;
+        margin: 150px;
+        background-color: #ede0ce;
+    }
+    div{
+        border:2px solid #b28d8d;
+        padding: 20px;
+        margin: 20px;
+        background-color: #e9d1c8;
+    }
+    h3{
+        text-align: center;
+    }
+    #fruits{
+        float: left;
+        width: 45%;
+    }
+    #vegetables{
+        width: 45%;
+        float: right;
+    }
+    #pulses{
+        clear: both;
+    }
+    h4{
+        text-align: center;
+    }
+    
+</style>
+<body>
+    <div id="item">
+        <h3>Welcome to my store</h3>
+    <div id="fruits" class="item">
+        <h4>Fruits</h4>
+        <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti rem impedit adipisci, ratione in ea maxime repellendus ad explicabo doloribus, eius iste! Tenetur enim cumque maiores voluptatibus quas omnis ratione cupiditate optio corporis.</p>
+    </div>
+    <div id="vegetables" class="item">
+        <h4>Vegetables</h4>
+        <p id="vegetablespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti rem impedit adipisci, ratione in ea maxime repellendus ad explicabo doloribus, eius iste! Tenetur enim cumque maiores voluptatibus quas omnis ratione cupiditate optio corporis.</p>
+    </div>
+    <div id="pulses" class="item">
+        <h4>Pulses</h4>
+        <p id="pulsespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti rem impedit adipisci, ratione in ea maxime repellendus ad explicabo doloribus, eius iste! Tenetur enim cumque maiores voluptatibus quas omnis ratione cupiditate optio corporis.</p>
+    </div>
+    </div>
+</body>
+</html>

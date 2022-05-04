@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and SetInterval</title>
+</head>
+<body>
+    <div class="container" style="font-weight: bold;">
+        This is a Stop Watch
+    </div>
+    <p id="timer"></p>
+    <script>
+        function displayTime(){
+            let date=new Date();
+            let para=document.getElementById('timer').innerHTML=date;
+            console.log(date);
+        }
+        setInterval(displayTime,1000);
+
+        // function greet(){
+        //     console.log("Happy Birthday Puja!!");
+        // }
+        // setInterval will display the output of a function at regular intervals
+        // let interval=setInterval(greet,5000);
+        // console.log(interval);
+
+        // clearInterval will take the id of setInterval and clear the output
+        // clearInterval(interval);
+
+        // setTimeout will display the output of a function once after the time mentioned
+        // setTimeout(greet,5000);
+        // let id=setTimeout(greet,5000);
+        // clearTimeout(id);
+        // console.log(id);
+
+    </script>
+</body>
+</html>

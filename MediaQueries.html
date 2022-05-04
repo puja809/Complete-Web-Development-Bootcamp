@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: tomato;
+            font-size: 22px;
+            text-align: center;
+            color: black;
+            display: none;
+        }
+        @media(max-width:399px){
+            #box-1{
+                display: block;
+                background-color: cornflowerblue;
+                color: white;
+            }
+        }
+        @media(max-width:899px) and (min-width:400px){
+            #box-2{
+                display: block;
+                background-color:violet ;
+                color: white;
+            }
+        }
+        @media(max-width:1440px) and (min-width:900px){
+            #box-3{
+                display: block;
+                background-color:rgb(238, 130, 175) ;
+                color: white;
+            }
+        }
+        @media(max-width:2000px) and (min-width:1500px){
+            #box-4{
+                display: block;
+                background-color:rgba(201, 83, 224, 0.897) ;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Media Queries</h3>
+    <P>Media queries are used to create the desktop responsive that is based on whether it is a laptop or desktop or iphone screen the element will adjust themselves accordingly</P>
+    <div class="box" id="box-1">iPhone</div>
+    <div class="box" id="box-2">Tablet</div>
+    <div class="box" id="box-3">Laptop</div>
+    <div class="box" id="box-4">Desktop</div>
+</body>
+</html>

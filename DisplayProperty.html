@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        img{
+            width: 100px;
+            border-radius: 17px;
+            margin-top: 5px;
+        }
+        header{
+            /* Width can be set for block elements only. After setting the width if we use margin:auto the element will be placed in center */
+            /* width: 20%; */
+            border:2px solid black;
+            border-radius: 20px;
+            margin: auto;
+            text-align: center;
+            background-color: blanchedalmond;
+            display:block;
+            box-sizing: border-box;
+
+        }
+        h3{
+            margin:auto;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="Puja_C.jpg" alt="Error Loading">
+        <h3>Welcome to Puja's Blog</h3>
+    </header>
+    <h4>CSS Display:</h4>
+    <p>CSS display is of two types:
+        <ul>
+            <li>Inline Display:It will take the space required by the element.</li>
+            <li>Block Display: It will take the entire space. Its width can be set and with auto:margin we can bring the content at center</li>
+        </ul>
+    </p>
+</body>
+</html>

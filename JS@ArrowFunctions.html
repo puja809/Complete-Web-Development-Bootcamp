@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions in JS</title>
+</head>
+<body>
+    <script>
+        // function greet(){
+        //     let greet="Good morning";
+        //     console.log(greet);
+        // }
+        // greet();
+        
+        // Arrow function is the shortcut for functions
+        // greet = () => {
+        //     console.log("Good Morning");
+        // }
+        // greet();
+
+        // Arrow function with parameters
+        // sum=(a,b)=>a+b;
+        // console.log(sum(2,3));
+
+        // Arrow Function with one parameter
+        // divide=(a)=>a/2;
+        // console.log(divide(4));
+        
+        // setInterval with arrow function
+        // setInterval(() => {
+        //     console.log("I am Puja! I am inside setInterval");
+        // }, 3000);
+
+        // Object
+        let obj={
+            greeting:"Good Morning",
+            name:["Puja","Diya","Dora","Dona"],
+            speak(){
+                this.name.forEach(element => {
+                    // 'this' inside a function will point to an object inside the function but in arrow fuction we can refer to outer objects as well using 'this'
+                    console.log(this.greeting+" Hi "+element);//'this' is used to point to an object
+                });
+
+            }
+        }
+        obj.speak();
+    </script>
+</body>
+</html>

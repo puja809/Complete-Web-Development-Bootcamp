@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JS</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>This tutorial is about Object and array in JS</h3>
+    </div>
+    <script>
+        // objects
+        let obj = {
+            Name: 'Puja',
+            Org: 'Google',
+            Salary: 150000
+        }
+        console.log(obj);
+        // to print object value in console write the following on console window
+        obj.Name
+        "Puja"
+        obj["Name"]
+        "Puja"
+        
+        // array declaration
+        let array = [4, 7, 1, 0, "Google", undefined];
+        console.log(array);
+
+        // Inserting new element in array
+
+        array.push("Microsoft");
+        console.log(array);
+
+        // sorting an array
+
+        array = array.sort();
+        console.log(array);
+
+        // another way to declare array
+        let array1 = [1, 7, "Puja", "Google"];
+        console.log(array1);
+        console.log(array1[1]);
+        
+        // Declare a new object of type array
+        let array2 = new Array(1,4,6,0,"Facebook");
+        console.log(array2);
+        
+        // Creating empty array with specified size
+        let array3 = new Array(23);
+        console.log(array3);
+
+
+    </script>
+</body>
+
+</html>

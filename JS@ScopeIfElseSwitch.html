@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-Else and switch statements in JS</title>
+</head>
+<body>
+    <div>
+        <h3>This tutorial will cover the below topics</h3>
+        <ul>
+            <li>scope of variable</li>
+            <li>If-else stament</li>
+            <li>Switch statement</li>
+        </ul>
+    </div>
+
+    <script>
+        // Note:- var datatype has a global scope. If we reuse a variable with datatype var the value will be overwritten. On the othehand if we use 'let' datatype we will be allowed to use the same variable name with 'let' datatype once within a block. 'var' var datatype has global scope whereas 'let' as block level scope 
+
+        // var str='Metricstream';
+        // console.log(str);
+        // var str='Google';
+        // console.log(str);
+
+        // let a='Puja'
+        // console.log(a);
+        // {
+        //     // scope within this block
+        //     let a='Diya'
+        //     console.log(a);
+        // }
+        
+        // A variable that has been declared as constant cannot change its stored value in future
+        // const b="Constant variable value cannot be changed"
+        // console.log(b);
+
+        // below stament will throw an error
+        // b="I want to change the value of constant variable"
+        // console.log(b);
+        
+
+        // If-else and if-else ladder
+        // let age=2;
+        // if(age<18){
+        //     console.log('You cannot drink alcohol');
+        // }
+        // else if(age==18){
+        //     console.log('You are only 18');
+        // }
+        // else{
+        //     console.log('You are an adult')
+        // }
+        
+        // Switch Statement is similar to if else. In switch statement all the statements after the matched value are executed if break statemnt is not given
+        const choco=8;
+        switch (choco) {
+            case 4:
+                console.log('Number of chocolate is 4');
+                break;
+            case 6:
+                console.log('Number of chocolate is 6');
+                break;
+            case 8:
+                console.log('Number of chocolate is 8');
+                break;
+            case 10:
+                console.log('Number of chocolate is 10');
+                break;
+                
+                default:
+                console.log('Number of chocolate is neither 4, nor 6, 8 or 10');
+                break;
+        }
+    </script>
+</body>
+</html>

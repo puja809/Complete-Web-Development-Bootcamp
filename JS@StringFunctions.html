@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JS</title>
+</head>
+<body>
+    
+    <script>
+        var str="Hi! I work in Metricstream";
+        console.log(str);
+        // indexOf() function is used to locate the first occurance of a substring inside a string
+        var position=str.indexOf('in');
+        console.log(position);
+
+        // lastIndexOf() function is used to locate the last occurance of a substring inside a string
+         position=str.lastIndexOf('i');
+        console.log(position);
+
+        // slicing is done to fetch a substring from a string. To do this we use slice method.
+        // while slicing a string start the index from 0 and it will extrat till endindex-1. 
+        // console.log(str.slice(6,10));
+
+        // substr(startindex,how many characters to be present in the substring extracted)
+        // console.log(str.substr(6,10));
+
+        // substring works similarly like slice except for slice can accept negetive values
+        console.log(str.substring(6,10));
+
+        // replace('old-substring','new-substring') will replace a substring with new substring but it won't affect the original string. We can store the new string in new variable.
+        var replaced=str.replace('Metricstream','Google');
+        console.log(replaced);
+
+        // to convert string to upper and lower case below functions are used respectively
+        console.log(str.toUpperCase());
+        console.log(replaced.toLowerCase());
+
+
+        // Contacinating or adding new string to old string
+        console.log(str.concat(' India'));
+
+
+        // Trim function removes all white spaces from start and end of the string
+        var strtrim="     Hi all       How are you?        ";
+        console.log(strtrim);
+        console.log(strtrim.trim());
+
+
+        // charAt(index of character in string) helps to extract a character from the string
+        console.log(str.charAt(4));
+
+        // Below process can also be used to extract a character from the string.
+        console.log(str[4]);
+
+        
+    </script>
+</body>
+</html>

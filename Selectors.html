@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        p{
+            color: chocolate;
+        }
+        /* ID Selector */
+        #firstPara{
+            color: cornflowerblue;
+        }
+        /* Class Selector */
+        .icolor{
+            
+            color: rebeccapurple;
+        }
+        .bgColor{
+            background-color: darkkhaki;
+        }
+        /* Group selector */
+        div,h4{
+            color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p>CSS has following types of selectors</p>
+    <ul>
+        <li>Element Selector</li>
+        <li>ID Selector</li>
+        <li>Class Selector</li>
+        <li>Group Selector</li>
+    </ul>
+    <h4>Element Selector</h4>
+    <p>It targets all elements of a particular type</p>
+    <p>
+        &lt;style&gt;
+            p{
+                color: chocolate;
+            }
+            &lt;/style&gt;
+    </p>
+    <h4>ID Selector</h4>
+    <p id="firstPara">It targets the element of particular ID</p>
+    <div>&lt;style&gt;
+        p{
+            color: chocolate;
+        }
+        #firstPara{
+            color: cornflowerblue;
+        }
+        &lt;/style&gt;
+    </div>
+    <h4>Class Selector</h4>
+    <p class="icolor bgColor">It targets the element of particular Class.One element can take the property of multiple classesss</p>
+    <div>&lt;style&gt;
+        .icolor{
+            
+            color: rebeccapurple;
+        }
+        .bgColor{
+            background-color: darkkhaki;
+        }
+        &lt;/style&gt;
+    </div>
+    <h4>Group Selector</h4>
+    <p >It targets group of elements.</p>
+    <div>&lt;style&gt;
+        div,h4{
+            color: salmon;
+        }
+        &lt;/style&gt;
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Martina's Dance Class
+    style
+        include ../Static/style.css
+  body
+    nav#navbar
+        ul 
+            img#logo(src="../Static/logo.png", alt="")
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Contact Us]
+
+    section#introSection 
+        div Martina's Dance Class 
+        div Get Fit With Dance!! 
+
+    section#missionSection 
+        h3 Our Missions 
+        div.card 
+            p Fitness Dance
+            div.card-box
+                div.card-image 
+                    img(src="../Static/Fitness.png", alt="")
+                div.card-content 
+                    span Dance can help increase body-metabolism and reduce obesity. It can be a good cardiovascular exercise.
+                
+        div.card 
+            p Classical Dance
+            div.card-box
+                div.card-image 
+                    img(src="../Static/Classical.png", alt="")
+                div.card-content 
+                    span Indian classical dance is an umbrella term for various performance arts rooted in musical theatre styles, whose theory and practice can be traced to the Sanskrit text, Natyashastra.
+            
+        div.card 
+            p Western Dance
+            div.card-box
+                div.card-image 
+                    img(src="../Static/Western.png", alt="")
+                div.card-content 
+                    span Country–western dance encompasses any of the dance forms or styles which are typically danced to country-western music, and which are stylistically associated with American country and/or western traditions.
+
+    section#sponsorsSection 
+        h3 Our Sponsors 
+        div.sponsor 
+            img(src="../Static/Logo1.png", alt="Sponsor Image" Class="spImage")
+            img(src="../Static/Logo2.png", alt="Sponsor Image" Class="spImage")
+            img(src="../Static/Logo3.png", alt="Sponsor Image" Class="spImage")
+            img(src="../Static/Logo4.png", alt="Sponsor Image" Class="spImage")
+
+    footer#footer 
+        |Copyrigth © 2022 www.Martina'sDanceClass.com | All rights reserved
+    script
+      include ../Static/script.js

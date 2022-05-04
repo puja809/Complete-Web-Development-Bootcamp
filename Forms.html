@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h3>HTML Forms</h3>
+    <!-- Form tag is used to create a HTML form -->
+    <form action="backend.php" >
+        <label for="name">Name:</label>
+        <div>
+            <!-- Input Tag provides various input types for the form like text, number, submit and reset button etc -->
+            <input type="text" id="name">
+        </div>
+        <br>
+        <!-- Label tag is used if you want to click on the text for eg "Role:" and the form field gets highlighted -->
+        <!-- Note: for attribute in label tag should be same as id attribute of input tag -->
+        <label for="role">Role:</label>
+        <!-- Division tag is used to provide a block -->
+        <div>
+            <input type="text" id="role">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <label for="myAdd">Address: </label>
+        <div>
+            <textarea name="myAddress" id="myAdd" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+        <!-- By default if you want to keep the checkbox checked use checked attribute -->
+            Are you eligible: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+        <!-- Radio button is used when you want to select anyone option for that the name attribute should be same for all options -->
+            Gender: Male <input type="radio" name="myGender">Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <label for="car">Car: </label>
+        <div>
+        <!-- select tag is used for drop down values -->
+        <!-- By default if you want option to be selected use "selected attribute" -->
+            <select name="myCar" id="car">
+                <option value="Ind" selected>Indica</option>
+                <option value="Swf">Swift</option>
+                <option value="Bl">Bolero</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Form">
+        </div>
+        <br>
+    </form>
+</body>
+
+</html>

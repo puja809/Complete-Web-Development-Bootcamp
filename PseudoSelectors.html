@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth pseudo selectors</title>
+    <style>
+        .container{
+            width: 0%;
+            display: block;
+            margin:auto;
+        }
+        /* Targeting the elements with their attributes */
+        input[type="text"]{
+            border: 2px solid blueviolet;
+        }
+        /* In list the 3rd child is targeted as n value is set to 3 */
+        /* li:nth-child(3){
+            color:brown;
+        } */
+
+        /* n values will be taken from 0 and result will be calculated accordingly. */
+
+        li:nth-child(3n+3){
+            color:brown;
+        }
+
+        /* odd child's are targeted */
+        li:nth-child(odd){
+            color:brown;
+        }
+        /* even child's are targeted */
+        li:nth-child(even){
+            color:cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter Name">
+            <input type="password" placeholder="Enter Password">
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+        </ul>
+    </div>
+</body>
+</html>

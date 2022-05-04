@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables & Custom Properties</title>
+    <style>
+        :root{
+            /* Any variable declared under room can be used anywhere within the code */
+            --primary-color:pink;
+        }
+        .item{
+            /* This Variable can be used within the scope of class item */
+            --box-color:goldenrod;
+            border:2px solid black;
+            background-color: var(--box-color);
+            margin: 2px 8px; 
+             width: 200px;
+            height: 200px;
+            
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            align-items:center;
+            margin: auto;
+            border: 2px solid tomato;
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">Item 1</div>
+        <div class="item" id="item-2">Item 2</div>
+        <div class="item" id="item-3">Item 3</div>
+    </div>
+</body>
+</html>

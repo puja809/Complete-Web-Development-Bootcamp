@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in JavaScript</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 2px solid black;
+            border-radius: 6px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            /* color: brown; */
+            font-style: italic;
+        }
+        #timer{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">Time And Tide waits for none:
+        <span id="timer"></span>
+    </div>
+    <script>
+        // let date=new Date();
+        // let date=new Date(0);This will give the standard time from which calculations are done. For example: Date Thu Jan 01 1970 05:30:00 GMT+0530 (India Standard Time)
+
+        // let time=date.getDate();
+        //  time=date.getDay();
+
+        // to get the year from date
+        //  time=date.getFullYear();
+
+        // to get the month from the date
+        // let time=date.getMonth();
+
+        // setDate() function changes the date
+        // date.setDate(15)
+        // console.log(date);
+        
+        // setFullYear() function changes the year
+        // date.setFullYear(3090)
+        // console.log(date);
+        
+        // Date.now() shows the no. of miliseconds passed from standard date that is Date Thu Jan 01 1970 05:30:00 GMT+0530 (India Standard Time)
+
+        // console.log(Date.now());
+
+        
+        function timer(){
+            let date=new Date();
+            let timer=document.getElementById('timer').innerHTML=date
+            // console.log(date);
+
+        }
+        setInterval(timer, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .item{
+            /* border: 2px solid tomato; */
+            padding: 12px 13;
+            margin: 12px 13px;
+            background: wheat;
+            border-radius: 6px;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 2px 2px goldenrod; */
+            
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 2px 2px 7px goldenrod ; */
+            
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 2px 2px 7px 9px goldenrod ; */
+            
+            
+            /* box-shadow: offset-x offset-y color,offset-x offset-y color; */
+            box-shadow: 4px 4px 3px goldenrod, 8px 8px 7px yellow;
+            
+        }
+        h3{
+            text-align: center;
+            /* text-shadow: offset-x offset-y blur-radius color; */
+            text-shadow: 4px 4px 3px gray;
+
+        }
+        p{
+            padding:12px 13px;
+            margin:12px 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item-1">
+            <h3>Card 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum. Animi debitis, itaque blanditiis
+                nihil fuga eius corrupti molestiae impedit error magni rerum officiis doloribus, nostrum vel,
+                reprehenderit exercitationem fugit necessitatibus. Accusamus, provident aut?</p>
+        </div>
+        <div class="item" id="item-2">
+            <h3>Card 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum. Animi debitis, itaque blanditiis
+                nihil fuga eius corrupti molestiae impedit error magni rerum officiis doloribus, nostrum vel,
+                reprehenderit exercitationem fugit necessitatibus. Accusamus, provident aut?</p>
+
+        </div>
+        <div class="item" id="item-3">
+            <h3>Card 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eum. Animi debitis, itaque blanditiis
+                nihil fuga eius corrupti molestiae impedit error magni rerum officiis doloribus, nostrum vel,
+                reprehenderit exercitationem fugit necessitatibus. Accusamus, provident aut?</p>
+        </div>
+    </div>
+</body>
+
+</html>

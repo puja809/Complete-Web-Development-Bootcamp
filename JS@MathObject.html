@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        // Math Objects
+        let obj=Math;
+        console.log(obj);
+
+        console.log("2 to the power 3 is "+Math.pow(2,3));
+        console.log("square root of 36 is "+Math.sqrt(36));
+
+        // Floor and ceil:
+        console.log("34.578 is rounded down to "+Math.floor(34.578));
+        console.log("34.578 is rounded up to "+Math.ceil(34.578));
+        
+        // absolute function:
+        console.log("The absolute value of -34.578 is "+Math.abs(-34.578));
+
+        // VAlue of trignometric functions:
+        console.log(Math.sin((Math.PI)/2))
+
+        // max and min value:
+        console.log("The Maximum value between 4,90,0 is "+Math.max(4,90,0));
+        console.log("The Minimum value between 4,90,0 is "+Math.min(4,90,0));
+
+        // Generating random values:
+        console.log(Math.random()+" is a random value");
+        // Generating a random value b/w 2 specific numbers:
+        let a=1,b=10;
+        console.log((a+(b-a)*Math.random())+" is a random value between 1 and 10.")
+
+    </script>
+</body>
+</html>

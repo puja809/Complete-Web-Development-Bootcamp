@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+</head>
+
+<body>
+    <h3>This tutorial will teach about loops</h3>
+    <ul>
+        <li>For loop</li>
+        <li>forEach Loop</li>
+        <li>forOf Loop</li>
+        <li>forIn Loop</li>
+        <li>While Loop</li>
+        <li>Do While Loop</li>
+    </ul>
+    <script>
+        // For loop syntax
+        // let i=0;
+        // for(i=0;i<5;i++){
+        //     console.log(`${i} is less than 5.`);
+        // }
+
+        //For loop to iterate an array
+        let arr = ["Puja", "Diya", "Dora", "Dona"];
+        // for (let index = 0; index < arr.length; index++) {
+        //     const element = arr[index];
+        //     console.log(`${element} is my friend.`);
+        // }
+
+        //forEach loop to iterate an array
+
+        // arr.forEach(element => {
+        //     console.log(`${element} is a good girl`);
+        // });
+
+        // forOf loop to iterate an array
+
+        // for (const element of arr) {
+        //     console.log(`${element} is a nice girl`);
+
+        // }
+
+        // While Loop syntax
+        let obj = 0;
+        // while(obj<5){
+        //     console.log(`${obj} is less than 5`);
+        //     obj++;
+        // }
+
+        // Do while loop
+        // do {
+        //     console.log(`${obj} is greater than 5. do-while loop will execute the statemnet atleast once as the condition is checked at the end`);
+        //     obj++;
+        // }
+        // while (obj > 5);
+        
+        // forIn loop to iterate an object
+        let object={
+            Name:"Puja",
+            Job:"Developer",
+            Salary:"80000"
+        };
+        for (const key in object) {
+            const element = object[key];
+            console.log(`${key} is ${element}`);
+            
+        }
+
+    </script>
+</body>
+
+</html>

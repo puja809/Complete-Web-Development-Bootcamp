@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h3>JSON</h3>
+    <p>JSON can be used to convert complex JS objects to strings and transport them over channels/networks. This process is called stringify. We can perform all string operations on JSON</p>
+    <p>stringify JSON can be revert back to objects by parse methods</p>
+    <script>
+        // Object created
+        let obj={
+            name:"Puja",
+            job:"Developer",
+            salary:500000
+        };
+        console.log(obj);
+
+        // stringify object
+        obj=JSON.stringify(obj);
+        console.log(obj);
+        
+        // Performing string operations on JSON
+        obj=obj.replace('Puja','Dona');
+        console.log(obj);
+        
+        // converting JSON string to object using parse
+        obj=JSON.parse(obj);
+        console.log(obj);
+
+    </script>
+</body>
+</html>

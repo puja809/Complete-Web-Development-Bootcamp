@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries with CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+        .box{
+            border:2px solid black;
+            background-color: green;
+            padding:23px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area:footer
+        }
+        @media(max-width:399px){
+            body{
+                display: block;
+                background-color: cornflowerblue;
+                color: white;
+            }
+            .container{
+            /* display: grid;
+            grid-gap: 1rem; */
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+        }
+
+        }
+        @media(max-width:899px) and (min-width:400px){
+            body{
+                display: block;
+                background-color:violet ;
+                color: white;
+            }
+            .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            }
+
+            aside{
+                display: none;
+            }
+        }
+        @media(max-width:1440px) and (min-width:900px){
+            body{
+                display: block;
+                background-color:rgb(238, 130, 175) ;
+                color: white;
+            }
+        }
+        @media only screen and (max-width:2000px) and (min-width:1500px){
+            body{
+                display: block;
+                background-color:rgba(201, 83, 224, 0.897) ;
+                color: white;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <nav id="navbar" class="box">Home About Us</nav>
+        <section id="section" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat nostrum repudiandae at cumque deserunt iure non sit, architecto eaque voluptatem fuga illum reprehenderit ab voluptatum saepe impedit assumenda aut ea maiores! Illo, iusto dolorum?</section>
+        <aside id="aside" class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam magnam sint saepe aspernatur necessitatibus, quos velit mollitia ea doloribus dolores esse inventore a debitis non quod! Exercitationem, inventore minus! Nobis eum, fuga dolor sint neque inventore sequi totam dolore repellat!</aside>
+        <footer id="footer" class="box">www.martina@chatterjee.com</footer>
+    </div>
+</body>
+</html>

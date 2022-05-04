@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            text-align: center;
+            font-size: 10px;
+            border: 2px solid black;
+            /* view-port width or vw will will occupy the entire screen as width */
+            width:200vw;
+            /* view-port height or vw will will occupy the entire screen as height */
+            height:200vh;
+        }
+        /* #item1{
+            /* em will multiply itself with parent element size to set the size of the child elements */
+            /* font-size: 3em; */
+            /* em value in padding will multiply with font size and then with parent font size. In this case 3em will become 3em*3em*10em */
+            /* padding: 3em; 
+        }
+        #item2{
+            /* rem will multiply itself with html font size to set the size of the elements */
+            /* font-size: 3rem; */
+            /* rem value in padding will multiply with html font size to set the font size of the element. In this case 3em will become 3em*25em 
+            padding: 3rem;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h2 id="item1">First heading</h2>
+        <h3 id="item2">Second heading</h3>
+        <h4 id="item3">Thisrd heading</h4>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .navbar{
+            background-color: rosybrown;
+            border-radius: 15px;
+            
+        }
+        /* When we apply float the element overflows from the backgroud. Overflow:auto command helps to prevent the overflow of the elemet from the background */
+        .navbar{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none;
+            padding: 15px;
+            margin: 20px;
+            padding-top: 5px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            padding: 50px;
+            margin: 12px;
+            color: seashell;
+            text-align: center;
+        }
+        #search{
+            border:2px solid black;
+            padding: 2px;
+            margin: 20px;
+            border-radius: 6px;
+        }
+        .navbar li a:hover{
+            background-color: tan;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://www.google.com" target="_blank">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Services</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+            <input type="text" name="search" id="search" placeholder="Search here">
+        </nav>
+    </header>
+</body>
+</html>
