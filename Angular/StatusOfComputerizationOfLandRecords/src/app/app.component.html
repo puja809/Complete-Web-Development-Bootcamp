@@ -1,0 +1,41 @@
+
+<div class="card text-center">
+  <div class="card-header">
+    Data Details
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">{{_dataCluster.title}}</h2>
+    <p class="card-text"><b>Description: </b>{{_dataCluster.desc}}</p>
+    <p class="card-text"><b>Created: </b>{{_dataCluster.created_date}}</p>
+    <p class="card-text"><b>Updated: </b>{{_dataCluster.updated_date}}</p>
+    <p class="card-text"><b>Total: </b>{{_dataCluster.total}}</p>
+    <p class="card-text"><b>Status: </b>{{_dataCluster.status}}</p>
+    <p class="card-text"><b>Sector: </b>{{_dataCluster.sector}}</p>
+    <p class="card-text"><b>Organisation: </b>{{_dataCluster.org}}</p>
+    <p class="card-text"><b>Organisation Type: </b>{{_dataCluster.org_type}}</p>
+    <a href={{_dataCluster.source}} class="btn btn-primary">{{_dataCluster.source}}</a>
+  </div>
+  <div class="card-footer text-muted">
+    Computerization of Registration
+  </div>
+</div>
+<div class="container" >
+  <div>
+    <table class="table table-striped">
+    <thead>      
+      <tr>
+        <th *ngFor="let displayedColumn of displayedColumns">{{displayedColumn}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alien of _dataCluster.records">
+          <td>{{alien.sl_no_}}</td>
+          <td>{{alien.state_ut}}</td>
+          <td>{{alien.computerization_of_registration}}</td>
+          <td>{{alien.e_stamping}}</td>
+          <td>{{alien.integration_of_land_records_and_registration}}</td>
+      </tr>
+    </tbody>      
+    </table>
+  </div>
+</div>
